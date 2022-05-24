@@ -1,0 +1,107 @@
+
+    
+
+.body {background-color: #F9CE44}
+#body {
+    background-color: #F9CE44;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: ¨links ¨ ¨titulo¨ ¨presentacion¨ ¨imagenesindex¨ ¨listado¨ ¨pieDePagina¨;
+    grid-row-gap: 20px;
+}
+.titulo
+h1 {color: grey; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500px;
+    font-display: swap;
+    font-size: 120px; 
+    border: solid 15px; 
+    border-color: royalblue;
+    display: flex;
+    justify-content: center;
+
+    }
+    
+h2 {color: grey;font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+justify-content: center;}
+.presentacion { color: grey;font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+justify-content: center;}
+
+.links { font-family: Verdana, Geneva, Tahoma, sans-serif; 
+font-size: medium;
+ }
+.listado { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    font-size: 50px ; 
+    color:royalblue ; 
+    background-size: 0.5rem ; 
+    background-color: purple;
+    border-style: double;
+    border-width: 15px; 
+    border-color: royalblue;
+    display: flex;
+    justify-content: flex-start ;}
+
+
+.imagenesindex { 
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.imagenPerros { 
+    display: flex;
+    justify-content: center;
+}
+
+.videoperros { display: flex;
+    justify-content: center;
+ 
+}
+.imagenGatos { 
+    display: flex;
+    justify-content: center;
+}
+.videogatos { 
+    display: flex;
+    justify-content: center;
+}
+.pieDePagina { color: grey;font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+.imagenAccesorios {
+    display: flex;
+    justify-content: center;
+}
+.mapa
+ { color: grey;font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+justify-content: center}
+
+.imagenmapa {
+    display: flex;
+    justify-content: center;
+    }
+
+@media  screen and (min-whidth: 768px) { #body {
+    background-color: #F9CE44;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: ¨links ¨ ¨titulo¨ ¨presentacion¨ ¨imagenesindex¨ ¨listado¨ ¨pieDePagina¨;
+    grid-row-gap: 20px;
+}
+    
+}    
