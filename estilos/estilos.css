@@ -60,7 +60,7 @@ h2 {
     justify-content: center;
 }
 
-.links { 
+.container-fluid { 
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: large;
     height: 10%;
@@ -84,13 +84,16 @@ h2 {
 
 
 .imagenesindex { 
-    height:100% ;
-    width:100%;
-    padding: 3px;
-    margin: 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    position:relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    flex-direction: column;
+    @media screen {min-width: 340px; max-width: 1270px;    
+    }
     
 }
 nav {
@@ -118,6 +121,8 @@ nav {
 .imagenPerros { 
     display: flex;
     justify-content: center;
+    @media screen {min-width: 340px; max-width: 1270px;    
+    }
 }
 
 .videoperros { 
