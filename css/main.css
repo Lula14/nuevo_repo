@@ -2,7 +2,7 @@
     
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
-.body {background-color: #F9CE44}
+
 #body {
     
     height: 100%;
@@ -13,24 +13,59 @@
     grid-template-columns: 100%;
     grid-row-gap: 20px;
     padding: 15px; 
-    background: rgb(34,193,195);
-    background: linear-gradient(270deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    
 @media screen {min-width: 340px; max-width: 1270px;    
 }}
+.bodyinicio {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 100%, rgba(217,56,56,1) 100%, rgba(252,176,69,1) 100%);
+}
+.bodyperros {
+    background: rgb(222,227,17);
+    background: radial-gradient(circle, rgba(222,227,17,1) 100%, rgba(0,95,255,1) 100%);
+}
+.bodygatos {
+    background: rgb(227,17,127);
+    background: radial-gradient(circle, rgba(227,17,127,1) 100%, rgba(0,95,255,1) 100%);
+
+}
+.bodyaccesorios {
+    background: rgb(227,94,17);
+    background: radial-gradient(circle, rgba(227,94,17,1) 100%, rgba(0,95,255,1) 100%);
+
+}
+.bodycontacto {
+    background: rgb(43,185,7);
+    background: radial-gradient(circle, rgba(43,185,7,1) 100%, rgba(0,95,255,1) 100%);
+
+}
+.bodypf {
+    background: rgb(7,55,185);
+    background: radial-gradient(circle, rgba(7,55,185,1) 100%, rgba(0,95,255,1) 100%);
+
+}
 .navbar {
     
     font-family: 'Kdam Thmor Pro', sans-serif; 
     font-size: medium;
-    color: royalblue;
+    color:whitesmoke;  
     display: flex;  
     justify-content: flex-start;
     
      
  }
+ .navbar-brand {
+    color: whitesmoke;
+
+ }
+ .offcanvas-title {
+    color: blueviolet;
+ }
 
 .portada
 h1 {
-    color:rgb(85, 2, 74) ;
+    max-width: 100%;
+    color: whitesmoke;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: normal;
     font-weight: 300px;
@@ -45,7 +80,7 @@ h1 {
     }
     
 h2 {
-    color:rgb(85, 2, 74);
+    color: whitesmoke;
     font-size: 60px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     display: flex;
@@ -56,15 +91,16 @@ h2 {
 img { 
     display: flex;
     justify-content: center;
+    justify-self: center;
     width: 100%;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
+    height: 500px;
+    
+    
 }
 
+
 .presentacion { 
-    color: rgb(85, 2, 74);
+    color: whitesmoke;
     font-size: 25px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-display: center;
@@ -79,7 +115,7 @@ img {
     font-size: large;
     height: 10%;
     width: 100%;
-    color: royalblue;
+    color: whitesmoke;
     display: flex;  
     justify-content: flex-start;
  }
@@ -89,9 +125,10 @@ img {
     font-weight: 500;
     font-display: swap;
     font-size: 50px ; 
-    color:rgb(85, 2, 74); 
+    color: whitesmoke; 
     background-size: 0.5rem ; 
-    background: linear-gradient(90deg, rgba(230,20,13,1) 0%, rgba(237,138,30,1) 20%, rgba(237,242,3,1) 40%, rgba(51,238,37,1) 60%, rgba(89,92,242,1) 80%, rgba(137,5,244,1) 100%);
+    background: rgb(222,17,227);
+    background: radial-gradient(circle, rgba(222,17,227,1) 10%, rgba(0,95,255,1) 100%);
     border-style: double;
     border-width: 10px; 
     border-color: royalblue;
@@ -113,15 +150,7 @@ img {
     }
     
 }
-nav {
-    padding: 3px;
-    margin: 3px; 
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 .imgdogui {
     padding: 3px;
     margin: 3px;
@@ -152,11 +181,12 @@ nav {
     justify-content: center;
 }
 .videogatos { 
+    margin: 15px;
     display: flex;
     justify-content: center;
 }
 .pieDePagina { 
-    color: grey;
+    color: whitesmoke;
     font-size: 15px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     display: flex;
@@ -168,7 +198,7 @@ nav {
     justify-content: center;
 }
 .mapa{ 
-    color: grey;
+    color: whitesmoke;
     font-size: 30px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     display: flex;
@@ -179,17 +209,30 @@ nav {
     display: flex;
     justify-content: center;
     }
-    
+   
 
-    
+
 .preguntas { 
-    color: grey;
+    color: whitesmoke;
     font-size: 25px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     display: flex;
     justify-content: flex-start;
 
 }
+#carouselExampleControlsNoTouching {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 600px;
+    height: 480px;
+
+}
+.carousel-item active {
+    width: 1000px;
+    height: 500px;
+}
+
 @media  screen and (min-whidth: 768px) { #body {
     background-color: #F9CE44;
     height: 100vh;

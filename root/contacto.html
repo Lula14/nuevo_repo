@@ -9,22 +9,53 @@
         <meta name="keywords" content="petshop, alimento balanceado, gatos, perros, peces, delivery, mascotas">
         <title>Index TIJUANA-Pet Shop</title>
         <link rel="stylesheet" href="../css/main.css">
-        <link rel="icon" href="../4 entrega Iglesias/img/puppyicon.png">
+        <link rel="icon" href="../img/puppyicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     </head>
-<body id="body">
+<body id="body" class="bodycontacto">
     
     <div>
         <nav class="navbar">
             <div class="container-fluid">
-              <a class="navbar" href="../index.html">Inicio</a>
-              <a class="navbar" href="../root/perros.html">Perros</a>
-              <a class="navbar" href="../root/gatos.html" >Gatos</a>
-              <a class="navbar" href="../root/accesorios.html" >Accesorios</a> 
-              <a class="navbar" href="../root/preguntasfrecuentes.html" >Preguntas Frecuentes</a>
-              
+              <a class="navbar-brand" href="../index.html">Inicio</a>
+              <a class="navbar-brand" href="../root/perros.html">Perros</a>
+              <a class="navbar-brand" href="../root/gatos.html">Gatos</a>
+              <a class="navbar-brand" href="../root/accesorios.html">Accesorios</a>
+              <a class="navbar-brand" href="../root/preguntasfrecuentes.html">Preguntas Frecuentes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tijuana</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contenido
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="../root/perros.html">Perros</a></li>
+                        <li><a class="dropdown-item" href="../root/gatos.html">Gatos</a></li>
+                        <li><a class="dropdown-item" href="../root/accesorios.html">Accesorios</a></li>
+                        <li><a class="dropdown-item" href="../root/contacto.html">Contacto</a></li>
+                        <li><a class="dropdown-item" href="../root/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+                        <li>
+                        
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
             </div>
           </nav>
     </div>

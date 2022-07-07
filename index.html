@@ -14,17 +14,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 </head>
-<body id="body">
-    <nav class="navbar">
+<body id="body" class="bodyinicio">
+        
+      <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar" href="./root/perros.html">Perros</a>
-          <a class="navbar" href="./root/gatos.html" >Gatos</a>
-          <a class="navbar" href="./root/accesorios.html" >Accesorios</a> 
-          <a class="navbar" href="./root/contacto.html" >Contacto</a> 
-          <a class="navbar" href="./root/preguntasfrecuentes.html" >Preguntas Frecuentes</a>
+          <a class="navbar-brand" href="../4 entrega Iglesias/index.html">Inicio</a>
+          <a class="navbar-brand" href="../4 entrega Iglesias/root/perros.html">Perros</a>
+          <a class="navbar-brand" href="../4 entrega Iglesias/root/gatos.html">Gatos</a>
+          <a class="navbar-brand" href="../4 entrega Iglesias/root/accesorios.html">Accesorios</a>
+          <a class="navbar-brand" href="../4 entrega Iglesias/root/contacto.html">Contacto</a>
+          <a class="navbar-brand" href="../4 entrega Iglesias/root/preguntasfrecuentes.html">Preguntas Frecuentes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tijuana</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../4 entrega Iglesias/index.html">Inicio</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contenido
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="../4 entrega Iglesias/root/perros.html">Perros</a></li>
+                    <li><a class="dropdown-item" href="../4 entrega Iglesias/root/gatos.html">Gatos</a></li>
+                    <li><a class="dropdown-item" href="../4 entrega Iglesias/root/accesorios.html">Accesorios</a></li>
+                    <li><a class="dropdown-item" href="../4 entrega Iglesias/root/contacto.html">Contacto</a></li>
+                    <li><a class="dropdown-item" href="../4 entrega Iglesias/root/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
-    
     <div>
         <header class="portada">
             <h1>TIJUANA</h1> 
@@ -33,15 +64,48 @@
     </div> 
     <div> 
         <p class="presentacion"> <strong> Trabajamos todas las marcas de alimentos balanceados para perros, gatos, peces, etc. Contamos con delivery sin cargo en el dia y además aceptamos todos los medios de pago! </strong> </p></div>   
-    <div class="imagenesindex">
-        <div class="d-flex justify-content-center">
     
-              <img src="../4 entrega Iglesias/img/imgperros/Dogui.jpg" alt="Dogui" height="300" width="300" class="imgdogui"> 
-              <img src="../4 entrega Iglesias/img/whiskas.jpg" alt="Whiskas" height="300" width="300" class="imgwhiskas"> 
-              <img src="../4 entrega Iglesias/img/accesorios.jpg" alt="Accesorios" height="300" width="300" class="imgacc"> 
-            </div>
-    </div>
-
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="../4 entrega Iglesias/img/imgperros/Dogui.jpg" alt="Dogui" height="300" width="300" class="imgdogui">
+          </div>
+          <div class="col">
+            <img src="../4 entrega Iglesias/img/whiskas.jpg" alt="Whiskas" height="300" width="300" class="imgwhiskas"> 
+          </div>
+          <div class="col">
+            <img src="../4 entrega Iglesias/img/accesorios.jpg" alt="Accesorios" height="300" width="300" class="imgacc">
+          </div>
+        </div>
+      </div>
+    
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/ALIMENTO PARA PERROS.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ALIMENTO PARA GATOS.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ACCESORIOS Y JUGUETES.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/PIEDRAS Y BANDEJAS SANITARIAS.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ENTREGAS.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     <div class="listado">  
         <br>
