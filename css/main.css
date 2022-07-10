@@ -1,5 +1,4 @@
-
-    
+@media screen and (min-width: 240px) and (max-width: 1480px) {
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 
@@ -7,18 +6,20 @@
     
     height: 100%;
     width: 100%;
-    position: relative;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 100%;
-    grid-row-gap: 20px;
-    padding: 15px; 
+    grid-row-gap: 10px;
+    padding: 10px; 
     
-@media screen {min-width: 630px; max-width: 560px;    
-}}
+}
 .bodyinicio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 100%, rgba(217,56,56,1) 100%, rgba(252,176,69,1) 100%);
+    @media screen and (min-width: 240px) and (max-width: 1480px) 
 }
 .bodyperros {
     background: rgb(222,227,17);
@@ -54,6 +55,16 @@
     
      
  }
+ .container-fluid {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: large;
+    height: 10%;
+    width: 100%;
+    color: royalblue;
+    display: flex;
+    justify-content: flex-start; 
+  }
+  
  .navbar-brand {
     color: whitesmoke;
 
@@ -114,15 +125,7 @@ img {
     text-align: center;
 }
 
-.container-fluid { 
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: large;
-    height: 10%;
-    width: 100%;
-    color: whitesmoke;
-    display: flex;  
-    justify-content: flex-start;
- }
+
  .li1 {
     display: flex;
     justify-content: center;
@@ -151,21 +154,34 @@ img {
 
 
 .imagenesindex { 
+    margin: 3px;
     height: 100%;
     width: 100%;
     max-width: 100%;
-    position:relative;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: auto;
-    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     align-items: center;
+    
     @media screen {min-width: 340px; max-width: 1270px;    
     }
     
 }
+.container {
+    
+        display: flex;
+        justify-content: center; 
+      
+}
+.row {
+    display: flex;
+        justify-content: center; 
+}
 
 .imgdogui {
+    display: flex;
+    justify-content: center; 
     width: 350px;
     height: 400px;
     padding: 3px;
@@ -173,19 +189,26 @@ img {
 
 }
 .imgwhiskas {
+    display: flex;
+        justify-content: center; 
     width: 350px;
     height: 400px;
     padding: 3px;
     margin: 3px;
     }
 .imgacc { 
+    display: flex;
+        justify-content: center; 
     width: 350px;
     height: 400px;
     padding: 3px;
     margin: 3px;
     }
 
-
+.col {
+    display: flex;
+        justify-content: center; 
+}
 .videoperros { 
     display: flex;
     justify-content: center;
@@ -244,6 +267,11 @@ img {
     height: 600px;
 
 }
+.carousel-inner {
+    width: 700px;
+    height: 600px;
+
+}
 .carousel-item active {
     width: 1000px;
     height: 500px;
@@ -298,3 +326,4 @@ textarea {
 }
     
 }    
+}
