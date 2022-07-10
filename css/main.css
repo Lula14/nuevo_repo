@@ -64,6 +64,7 @@
 
 .portada
 h1 {
+    padding: 2.5%;
     max-width: 100%;
     color: whitesmoke;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -90,10 +91,13 @@ h2 {
 }
 img { 
     display: flex;
-    justify-content: center;
-    justify-self: center;
+    flex-direction: row;
+    text-align: center;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 10%;
     width: 100%;
-    height: 500px;
+    height: 700px;
     
     
 }
@@ -119,7 +123,18 @@ img {
     display: flex;  
     justify-content: flex-start;
  }
+ .li1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+ }
 .listado { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+    height: 250px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -132,8 +147,7 @@ img {
     border-style: double;
     border-width: 10px; 
     border-color: royalblue;
-    display: flex;
-    justify-content: center ;}
+    }
 
 
 .imagenesindex { 
@@ -152,15 +166,21 @@ img {
 }
 
 .imgdogui {
+    width: 350px;
+    height: 400px;
     padding: 3px;
     margin: 3px;
 
 }
 .imgwhiskas {
+    width: 350px;
+    height: 400px;
     padding: 3px;
     margin: 3px;
     }
 .imgacc { 
+    width: 350px;
+    height: 400px;
     padding: 3px;
     margin: 3px;
     }
@@ -219,13 +239,52 @@ img {
     display: flex;
     justify-content: center;
     justify-self: center;
-    width: 600px;
-    height: 480px;
+    align-items: center;
+    width: 800px;
+    height: 600px;
 
 }
 .carousel-item active {
     width: 1000px;
     height: 500px;
+}
+.fac {
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.form1 {
+    background-color: #bd44f9eb;
+    width: 400px;
+    height: 600px;
+    border: 4px solid rgb(66, 91, 234);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.formulario { display: flex;
+justify-content: center;
+align-items: center;}
+    
+button {
+    border: 3px solid rgb(66, 91, 234);
+border-radius: 5%;
+
+
+}
+
+input {
+    
+    border: 1px solid blanchedalmond;
+    border-radius: 5%;
+    
+}
+textarea {
+    border: 1px solid blanchedalmond;
+    border-radius: 5%;
+
 }
 
 @media  screen and (min-whidth: 768px) { #body {
